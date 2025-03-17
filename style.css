@@ -2,54 +2,65 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Preahvihear;
+    
 }
+/* for nav bar  */
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
 }
+/* for unorder list of nav bar */
 .navbar ul{
     display: flex;
     list-style: none; 
     padding: 0px 40px;
 }
+/* for list items of nav bar */
 .navbar ul li{
     margin: 0px 15px;
 }
+/* for set the logo */
 .logo{
     margin: 0px 40px;
 }
+/* for align the anchor tags */
 .navbar ul li a{
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s;
     color: black;
 }
+/* for adding hover */
 .navbar ul li a:hover{
     color: #8a63d2;
 }
+/* to set the home section */
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 40px 0px;
+    padding: 40px 0px;  
 }
+/* set the about section after the home section */
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Preahvihear;
     font-size: 22px;
 }
+/* set experience */
 .work-experience{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0px;
+    padding: 50px ;
     gap: 40px;
 }
+/* set skill section */
 .skill{
     display: flex;
     justify-content: center;
@@ -59,13 +70,30 @@
     font-size: 24px;
     margin-left: 20px;
 }
+/* set btn style */
 .btn{
     margin: 1px;
     border: 1px solid black;
     border-radius: 10px;
     height: 30px;
     width: 119px;
+    background-color: #693B93;
+    color: #FFFFFF;
+    
 }
+/* align text of skill section */
 .skill-container{
     text-align: center;
+}
+.heroheadline p::first-line{
+    font-size: 17px;
+}
+.card-size{
+    border: 1px solid black;
+   padding-left: 1rem;
+   margin-bottom: 1rem;
+   padding-bottom: 1rem;
+   border-radius: 15px;
+   background-color: #2C1250;
+   color: #FFFFFF;
 }

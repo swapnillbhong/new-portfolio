@@ -41,6 +41,7 @@
     justify-content: center;
     align-items: center;
     font-family: Preahvihear;
+    font-size: 22px;
 }
 .work-experience{
     display: flex;
@@ -48,4 +49,21 @@
     align-items: center;
     padding: 60px 0px;
     gap: 40px;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
+    font-size: 24px;
+}
+.btn{
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    width: 119px;
+
+
 }

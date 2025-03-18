@@ -73,13 +73,22 @@ img {
      width: 100;
 } */
 /* set experience */
-.work-experience{
+.Experience{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px ;
-    gap: 40px;
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
+.experience-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* set skill section */
 .skill{
     display: flex;

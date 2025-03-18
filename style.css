@@ -78,15 +78,33 @@ img {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    gap: 20px;
-    width: 100%;
-    height: auto;
+    max-width: 1200px; 
     margin: auto;
+    gap: 40px;
 }
 .experience-card{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    width: 400px;
+    gap: 14px;
+    overflow: hidden;
+    border: 1px solid #251043;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: linear-gradient(145deg, #1A0B2E,#1A0B2E);
+}
+.experience-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #693B93;
+}
+.experience-card img{
+    width: 70px;
+    height:70px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 /* set skill section */

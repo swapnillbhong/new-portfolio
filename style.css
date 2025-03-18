@@ -88,7 +88,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 400px;
+    width: 600px;
     gap: 14px;
     overflow: hidden;
     border: 1px solid #251043;
@@ -123,10 +123,11 @@ img {
     margin: 1px;
     border: 1px solid black;
     border-radius: 10px;
-    height: 30px;
+    height: 40px;
     width: 119px;
     background-color: #693B93;
     color: #FFFFFF;
+    
     
 }
 /* align text of skill section */
@@ -194,4 +195,192 @@ img {
 
 .herologo img {
     background: transparent !important;
+}
+.featured-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 40px;
+    gap: 60px;
+    position: relative;
+}
+
+/* Add this new style for reversed layout */
+.featured-projects.reverse {
+    flex-direction: row-reverse;
+}
+
+.featured-left {
+    flex: 1;
+    position: relative;
+}
+
+.project-wireframe {
+    background: linear-gradient(145deg, #1a0b2e, #1a0b2e);
+    border: 1px solid rgba(123, 74, 226, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.project-wireframe img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.featured-right {
+    flex: 1;
+    position: relative;
+}
+
+.featured-label {
+    color: #8A63D2;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.project-title {
+    color: #FFFFFF;
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.project-description {
+    background: rgba(26, 11, 46, 0.95);
+    border: 1px solid rgba(123, 74, 226, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.project-description p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.decoration-dots {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background: #8A63D2;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Update media query to handle reverse layout */
+@media (max-width: 968px) {
+    .featured-projects,
+    .featured-projects.reverse {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .featured-right {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 32px;
+    }
+
+    .decoration-dots {
+        right: 20px;
+    }
+}
+
+.footer {
+    background: linear-gradient(145deg, #1a0b2e, #1a0b2e);
+    border-top: 1px solid rgba(123, 74, 226, 0.5);
+    padding: 60px 0 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a, .footer-nav a {
+    color: #a9a9a9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover, .footer-nav a:hover {
+    color: #8a63d2;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section p {
+    color: #a9a9a9;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(123, 74, 226, 0.2);
+}
+
+.footer-bottom p {
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .social-links, .footer-nav {
+        align-items: center;
+    }
 }

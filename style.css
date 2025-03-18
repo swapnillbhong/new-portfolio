@@ -45,8 +45,9 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 40px 0px;  
-   
+    padding: 30px 0px;  
+    row-gap: initial;
+   /* background-image: -moz-linear-gradient(#763CAC,#320F8500); */
 }
 /* set the about section after the home section */
 .about{
@@ -55,6 +56,19 @@
     align-items: center;
     font-size: 22px;
 }
+.about-content img{
+    position: relative;
+    width: 136px;
+    padding: top 10px; ;
+    /* padding: 10px 3px;
+    /* position: absolute;
+    top:22%; */ 
+    
+}
+/* .about img{
+   
+     width: 100;
+} */
 /* set experience */
 .work-experience{
     display: flex;

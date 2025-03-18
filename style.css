@@ -1,19 +1,25 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Preahvihear;
-   background: #11071F;
-   color: #FFFFFF;
-    
+    color: #FFFFFF;
 }
+
+body {
+    background: #11071F;
+}
+
+img {
+    background: transparent !important;
+}
+
 /* for nav bar  */
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-
 }
 /* for unorder list of nav bar */
 .navbar ul{
@@ -28,10 +34,6 @@
 /* for set the logo */
 .logo{
     margin: 0px 40px;
-}
-.logo img{
-    width: 30px;
-    padding-left: 5px;
 }
 /* for align the anchor tags */
 .navbar ul li a{
@@ -61,15 +63,15 @@
     align-items: center;
     font-size: 22px;
 }
-.about-content img{
-    position: relative;
+.about-content img {
     width: 136px;
-    padding: top 10px; ;
     display: inline-block;
-    vertical-align: middle;
-   
+    vertical-align: middle;
 }
 
+/* .about img{
+     width: 100;
+} */
 /* set experience */
 .work-experience{
     display: flex;
@@ -107,6 +109,8 @@
 .heroheadline p::first-line{
     font-size: 17px;
 }
+
+
 .contact-info{
     color: #FFFFFF;
     justify-content: center;
@@ -129,5 +133,38 @@
     text-align: left;
     padding: 40px;
     font-size: 15px;
+
+}
+.arrow-container {
+    position: relative;
+    left: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
+.arrow-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+.hello-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.curved-arrow {
+    position: absolute;
+    left: -80px;
+    top: 20px;
+    z-index: 1;
+}
+
+.curved-arrow img {
+    width: 100px;
+    height: auto;
+    background: transparent !important;
+}
+
+.herologo img {
+    background: transparent !important;
+}

@@ -66,7 +66,6 @@
     
 }
 /* .about img{
-   
      width: 100;
 } */
 /* set experience */
@@ -106,15 +105,7 @@
 .heroheadline p::first-line{
     font-size: 17px;
 }
-.card-size{
-    border: 1px solid black;
-   padding-left: 1rem;
-   margin-bottom: 1rem;
-   padding-bottom: 1rem;
-   border-radius: 15px;
-   background-color: #2C1250;
-   color: #FFFFFF;
-}
+
 
 .contact-info{
     color: #FFFFFF;
@@ -133,4 +124,10 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.contact-info p{
+    text-align: left;
+    padding: 40px;
+    font-size: 15px;
+
 }

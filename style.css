@@ -384,3 +384,14 @@ img {
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
